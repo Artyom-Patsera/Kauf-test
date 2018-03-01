@@ -1,0 +1,1018 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+
+*
+    padding: 0
+    margin: 0
+
+ul, h1, h2, h3, h4
+    margin: 0
+    padding: 0
+    
+a
+    text-decoration: none
+li
+    list-style: none
+    
+div, section, article, ul, li,
+h1, h2, h3, a, figure
+    box-sizing: border-box
+
+html, body
+	height: auto
+
+
+body
+    width: 100%
+    background: #cbced2
+    // font-size: 16px
+    line-height: 1.5
+    font-family: 'Lato', sans-serif;
+    
+a:visited
+    color: #606 
+
+a:link 
+    color: #036
+
+a:active 
+    color: #ff0    
+
+.wrapper
+    display: flex
+    min-height: 100vh
+    flex-direction: column
+    max-width: 100%
+    min-width: 320px
+    margin: 0 auto
+
+.main 
+    flex: 1
+
+.name_magazine
+    display: inline-block
+    margin: 0 auto 
+    width: 100px
+    height: 100px
+    text-align: center
+    line-height: 100px
+    background-color: #fc5c49
+    margin-bottom: 120px
+    transition: scale, 0.5s
+    a 
+        text-decoration: none
+        color: #fff 
+        font-weight: 900
+img
+    vertical-align: middle
+.container
+    padding: 0
+
+button
+    cursor: pointer
+    outline: none
+.header
+    width: 100%
+    position: relative
+    border-radius: 5px
+    overflow: hidden
+    margin-bottom: 15px
+    .container
+        position: relative
+        overflow: hidden
+    .logo
+        position: absolute
+        top: 30px
+        left: 70px
+        z-index: 4
+        display: block
+        img
+            max-width: 100%
+    .nav-bar-right
+        // background-color: #49a0d5
+        background-color: #282931
+        position: absolute
+        z-index: 5
+        left: -300px
+        top: 0
+        max-width: 300px
+        max-height: 100%
+        // transform: translate(0, -50%)
+        overflow-y: auto
+        transition: all 0.5s
+        opacity: 0.8
+        ul
+            display: inline-block
+            width: 200px
+            li 
+                display: block
+                border-bottom: 1px solid #49a0d5
+                a 
+                    display: block
+                    padding: 15px 30px 
+                    text-decoration: none
+                    color: #fff
+                    transition: all 0.3s
+                    text-align: left
+                    font-weight: bold
+                    &:hover
+                        background-color: #fc5c49
+                        color: #fff
+
+    .nav-bar-top
+        position: absolute
+        display: block
+        z-index: 3
+        width: 100%
+        text-align: right
+        left: 0
+        top: 40px
+        ul
+            display: inline-block
+            margin-right: 70px
+            font-size: 0.9em
+            
+            li 
+                display: inline-block
+                list-style: none
+                margin-right: 15px
+                .menu-btt
+                    color: #fff
+                &:nth-child(2)
+                    width: 2px
+                    height: 1em
+                    background-color: #929396
+                    margin-right: 20px
+                &:nth-child(3)
+                    margin-right: 28px
+                &:last-child
+                    margin-right: 0
+
+                a 
+                    display: inline-block
+                    text-transform: uppercase
+                    font-weight: 700
+                    text-decoration: none
+                    text-align: center
+                    color: #929396
+                    padding: 5px
+
+
+            
+
+    .head-btt
+        position: absolute
+        left: 50%
+        bottom: 15%
+        transform: translate(-50%, 0)
+        z-index: 4
+        min-width: 200px
+        height: 50px
+        border: none
+        background-color: #49a0d5
+        color: #fff
+        text-transform: uppercase
+        font-weight: 700
+        text-align: center
+        line-height: 50px
+        border-radius: 50px 50px 50px 50px
+        overflow: hidden
+        transition: all 2s
+        -webkit-box-shadow: 0px 10px 59px 9px rgba(0,0,0,0.6);
+        -moz-box-shadow: 0px 10px 59px 9px rgba(0,0,0,0.6);
+        box-shadow: 0px 10px 59px 9px rgba(0,0,0,0.6);
+        font-size: 1em
+        &:before
+            content: 'make it beautiful'
+            position: absolute
+            text-align: center
+            line-height: 50px
+            color: #fff
+            width: 100%
+            height: 100%
+            left: -100%
+            top: 0
+            background-color: #fc5c49
+            border-radius: 50px 50px 50px 50px
+            opacity: 0.9
+            transition: all 0.5s
+            font-size: 1em
+            font-weight: 700
+        &:hover
+            background-color: transporent
+            
+            
+            &:before
+                left: 0
+                // transform: rotate(0deg)
+
+
+
+
+        
+    .slick-wrap
+        position: relative
+        width: 100%
+        min-height: 100%
+        text-align: center
+        margin: 0
+        .my-dots
+            position: absolute
+            left: 0
+            bottom: 0
+            width: 100%
+            padding-bottom: 30px
+            z-index: 3
+            font-size: 0
+            .slick-active
+                border: 3px solid #fff
+                button
+                    background-color: transparent
+
+            li 
+                display: inline-block
+                font-size: 0
+                border: 3px solid #645960
+                border-radius: 100%
+                margin-right: 10px
+                &:last-child
+                    margin-right: 0
+                button
+                    display: inline-block
+                    width: 5px
+                    height: 5px
+                    border-radius: 100%
+                    border: none
+                    background-color: #645960
+                    outline: none
+                    font-size: 0
+        .arrow
+            position: absolute
+            top: 50%
+            z-index: 3
+            width: 45px
+            height: 45px
+            text-align: center
+            border-radius: 100%
+            border: 1px solid #fff
+            display: inline-block
+            background-color: transparent
+            color: #fff
+            outline: none
+            display: -webkit-flex
+            display: -moz-flex
+            display: -ms-flex
+            display: -o-flex
+            display: flex
+            flex-wrap: nowrap
+            svg
+                margin: auto
+
+
+        .prev
+            left: 70px
+            
+        .next
+            right: 70px
+            
+
+        img
+            max-width: 100% 
+            vertical-align: middle
+        &:before
+            content: ''
+            width: 100%
+            height: 100%
+            position: absolute
+            left: 0
+            top: 0
+            background-color: #000
+            opacity: 0.8
+            border-radius: 5px
+    .slide
+        position: relative
+
+        .wrap-video
+            max-width: 630px
+            // width: 630px
+            // height: 401px
+            background-color: transparent
+            z-index: 10
+            position: absolute
+            left: 50%
+            top: 50%
+            transform: translate(-50%, -50%)
+            -webkit-box-shadow: 0px 10px 59px 9px rgba(0,0,0,0.6);
+            -moz-box-shadow: 0px 10px 59px 9px rgba(0,0,0,0.6);
+            box-shadow: 0px 10px 59px 9px rgba(0,0,0,0.6);
+            text-align: center
+            overflow: hidden
+            border-radius: 5px
+            img
+                max-width: 100%
+                vertical-align: middle
+            
+.play-video
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    text-align: center
+    width: 92px
+    height: 92px
+    border-radius: 100%
+    background-color: transparent
+    border: 1px solid #fff
+    color: #fff
+    outline: none
+    transition: all 0.5s
+    &:hover
+        color: #fc5c49
+        border: 1px solid #fc5c49           
+
+.nav-bar-right::-webkit-scrollbar 
+    width: 5px
+    
+.nav-bar-right::-webkit-scrollbar-track 
+    background-color: #29292f
+        
+.nav-bar-right::-webkit-scrollbar-thumb
+    background-color: #fc5c49
+    border-radius: 10px 
+
+.active-top-m
+    color: #fff !important
+
+
+.main
+    width: 100%
+    .arrow
+        color: gray
+        background-color: transparent
+        border: none
+        position: absolute
+        z-index: 3
+    .m-prev
+        top: -22%
+        left: 42%
+    .m-next
+        top: -22%
+        right: 42%   
+    .container
+        overflow: hidden
+    .wrapp-items
+        width: 100%
+        background-color: #fff
+        margin-bottom: 15px
+        margin-top: 15px
+        border-radius: 5px
+        padding-bottom: 55px
+        padding-top: 25px
+        text-align: center
+        h3
+            margin-bottom: 15px
+            padding: 5px
+            text-align: center
+            text-transform: uppercase
+            font-size: 1em
+            display: inline-block
+            font-weight: 400
+        .slide
+            width: 100%
+            padding: 0
+            margin: 0
+            .arrow
+                color: gray
+                background-color: transparent
+                border: none
+                position: absolute
+                z-index: 3
+            .m-prev
+                top: -22%
+                left: 42%
+            .m-next
+                top: -22%
+                right: 42%   
+            .slide-items
+                display: -webkit-flex
+                display: -moz-flex
+                display: -ms-flex
+                display: -o-flex
+                display: flex
+                justify-content: center
+                flex-wrap: nowrap
+                .wrapp-img
+                    text-decoration: none
+                    max-width: 180px
+                    max-height: 180px
+                    img
+                        max-width: 100%
+                        vertical-align: middle
+
+            .wrapp-info
+                padding-top: 22px
+                margin-left: 10px
+                display: -webkit-flex
+                display: -moz-flex
+                display: -ms-flex
+                display: -o-flex
+                display: flex
+                flex-direction: column
+                justify-content: center
+                span
+                    // padding: 7px 10px
+                    min-width: 40px
+                    align-items: flex-start !important
+                    text-align: left
+                button
+                    padding: 5px 0
+                    border-radius: 50px 50px 50px 50px
+                    background-color: transparent
+                    border: 2px solid #c1c1c7 
+                    margin-top: 18px
+                    font-size: 1em
+                    max-width: 100px
+                    text-align: center
+                    transition: all 0.3s
+                    color: #454553
+                    font-weight: 700
+                    &:hover
+                        border: 2px solid #645960
+
+
+                .info
+                    margin-bottom: 18px
+                    font-size: 0.8em
+                    text-transform: uppercase
+                    text-align: center
+                    border-radius: 5px
+                    color: #fff
+                    padding: 7px 0
+                    font-weight: 700
+                .klass
+                    font-size: 0.9em
+                    padding: 0
+                    line-height: 1.3
+                    color: #454553
+                    font-weight: 300
+
+
+                .name_it
+                    font-size: 1.4em
+                    padding: 0
+                    line-height: 1.3
+                    color: #454553
+                    font-weight: 400
+                .new
+                    background-color: #f2a77e
+                .by-now
+                    background-color: #b9aada
+                .bio
+                    background-color: #bbcc76 
+
+  
+    
+
+    .wrap-video-slide
+        width: 100%
+        background-color: #fff
+        margin-bottom: 15px
+        margin-top: 15px
+        border-radius: 5px
+        padding-bottom: 30px
+        padding-top: 25px
+        text-align: center
+        position: relative
+        .auto-pl
+            position: absolute
+            top: 26px
+            right: 70px
+            display: -webkit-flex
+            display: -moz-flex
+            display: -ms-flex
+            display: -o-flex
+            display: flex
+            cursor: pointer
+            justify-content: center
+            font-weight: 700
+            z-index: 3
+            .text-apl
+                margin: auto
+                padding: 0 8px
+                color: #9e9ea6
+
+            .wrapp-btt
+                width: 30px
+                height: 18px
+                border: 1px solid gray
+                border-radius: 50px 50px
+                cursor: pointer
+                display: -webkit-flex
+                display: -moz-flex
+                display: -ms-flex
+                display: -o-flex
+                display: flex
+                justify-content: center
+                margin: auto
+                span
+                    width: 8px
+                    height: 8px
+                    display: inline-block
+                    border-radius: 100% 
+                    margin: auto
+                    transition: all 0.4s
+                .tr
+                    background-color: #49a0d5
+
+                  
+        h3
+            margin-bottom: 35px
+            padding: 5px
+            text-align: center
+            text-transform: uppercase
+            font-size: 1em
+            display: inline-block
+            font-weight: 900
+        .slide
+            display: -webkit-flex
+            display: -moz-flex
+            display: -ms-flex
+            display: -o-flex
+            display: flex
+            justify-content: center
+            .arrow
+                top: -30%
+            .slide-video
+                display: -webkit-flex
+                display: -moz-flex
+                display: -ms-flex
+                display: -o-flex
+                display: flex
+                flex-direction: column
+                text-align: left
+                justify-content: center
+                .wrapp-video
+                    position: relative
+                    border-radius: 5px
+                    max-width: 180px
+                    max-height: 140px
+                    margin: auto
+                    margin-bottom: 15px
+                    .time
+                        position: absolute
+                        top: 5px
+                        right: 5px
+                        background-color: #000
+                        opacity: 0.6
+                        color: #fff
+                        border-radius: 10px
+                        padding: 0 8px
+                        height: 20px
+                        line-height: 20px
+                        font-size: 0.7em
+                        font-weight: 700
+                    .play-video
+                        width: 40px
+                        height: 40px
+                        border: 2px solid #a59b9e
+
+                    img
+                        vertical-align: middle
+                        // width: 100%
+                        max-width: 100%
+                        border-radius: 5px
+                .nv
+                    font-size: 0.8em
+                    font-weight: bold
+                    padding: 5px 0
+                    color: #454553
+                    padding-left: 15px
+                    font-weight: 900
+
+                .np
+                    font-size: 0.75em
+                    padding: 0 0
+                    color: #b5b5bc
+                    padding-left: 15px
+                    font-weight: 700
+    .wrapp-post 
+        width: 100%
+        img
+            width: 100%
+            max-width: 100%
+            vertical-align: middle
+        .wrapp-art
+            // overflow: hidden
+            // background-color: #fff
+            // padding: 0
+            // margin-right: 15px
+            // margin-left: 15px
+            display: -webkit-flex
+            display: -moz-flex
+            display: -ms-flex
+            display: -o-flex
+            display: flex
+            margin-bottom: 15px
+            margin-top: 15px
+            &:nth-child(3)
+                padding-right: 0
+            .post-img
+                position: relative
+            .wrap-cr
+                position: absolute
+                left: 30px
+                bottom: 20px
+
+                .ico-c
+                    width: 12px
+                    height: 12px
+                    background-color: #d47e8e
+                    display: inline-block
+                    border-radius: 100% 
+                .n 
+                    text-transform: uppercase
+                    color: #fff
+                    font-size: 0.8em
+                    font-weight: 700
+            .simulator-margin
+                background-color: #fff
+                width: 100%
+                // min-height: 400px
+                overflow: hidden
+                border-radius: 5px
+                position: relative
+                padding-bottom: 30px !important
+                .art-1
+                    padding-top: 35px
+                    padding-left: 30px
+                    padding-right: 20px
+
+
+
+                    
+                    h2
+                        font-size: 1em
+                        padding-bottom: 10px
+                        color: #454553
+                        font-weight: 700
+                    p
+                        font-size: 0.9em
+                        color: #8c8c99
+                        font-weight: 400
+                .panel
+                    position: absolute
+                    left: 0
+                    width: 100%
+                    bottom: 12px
+                    text-align: center
+                    font-size: 0.8em
+                    color: #9e9ea6
+                    font-weight: 400
+                    .like-quan
+                        margin-right: 15px
+                    .sms-quan
+                        margin-right: 40px
+            .sim-rel
+                background: url(../img/art-img-2.jpg) center center no-repeat
+                background-size: cover
+                padding-top: 260px
+                padding-left: 30px
+                padding-bottom: 30px
+                padding-right: 50px
+                position: relative
+                cursor: pointer
+                &:before
+                    content: ''
+                    position: absolute
+                    width: 0
+                    height: 0
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%, -50%)
+                    background-color: #000
+                    opacity: 0.6
+                    transition: all 0.5s
+                    cursor: pointer
+                    border-radius: 25%
+                &:hover
+                    background-color: red
+                    & .art-2
+                        opacity: 0.6
+                    &:before
+                        width: 100%
+                        height: 100%
+                        border-radius: 0
+                .art-2
+                    color: #fff
+                    opacity: 0
+                    transition: all 0.5s
+                    .out-ico
+                        width: 12px
+                        height: 12px
+                        border-radius: 100%
+                        background-color: #5beeaf
+                        display: inline-block
+                    .art-text
+                        font-size: 0.8em
+                        font-weight: 700
+                    .date
+                        font-size: 0.8em
+                        font-weight: 700
+                    h2
+                        font-size: 1.4em
+                        font-weight: 400
+                    .out
+                        text-transform: uppercase
+                        font-weight: 700
+                        font-size: 0.7em
+                        padding-bottom: 8px
+                        display: inline-block
+                        padding-left: 3px
+            .art-3
+                padding-top: 30px   
+                padding-left: 30px
+                padding-bottom: 15px
+                padding-right: 38px
+                position: relative
+                .ico-art
+                    width: 10px
+                    height: 10px
+                    border-radius: 100%
+                    background-color: #4a90e2
+                    display: inline-block
+                .art-text
+                    padding-left: 3px
+                    color: #b5b5bc
+                    font-weight: 700
+                    // margin-bottom: 25px
+                h2
+                    font-size: 1.2em
+                    margin-top: 25px
+                    color: #878790
+                    font-weight: 700
+                p
+                    font-size: 1em
+                    color: #454553
+                    font-weight: 400
+                    a 
+                        color: #4aa0d5
+
+                    
+            .brr-0
+                border-radius: 5px 0 0 5px
+            
+                
+
+        .composit
+            overflow: hidden
+            border-radius: 0px 5px 5px 0px
+            background: url(../img/art-img-3.jpg) center center no-repeat
+            background-size: cover
+            background-repeat: no-repeat
+            margin-top: 15px
+            margin-bottom: 15px
+            min-height: 400px
+            img
+                // border-radius: 0px 5px 5px 0px
+
+    .wrapp-alphabet
+        width: 100%
+        margin-top: 15px
+        margin-bottom: 15px
+        .row
+            display: -webkit-flex
+            display: -moz-flex
+            display: -ms-flex
+            display: -o-flex
+            display: flex
+        .container
+            padding-bottom: 25px
+            padding-top: 25px
+            background-color: #454553
+            border-radius: 5px
+            ul
+                display: -webkit-flex
+                display: -moz-flex
+                display: -ms-flex
+                display: -o-flex
+                display: flex
+                justify-content: space-between
+                padding: 0
+                &:first-child
+                    padding-left: 15px
+                &:last-child
+                    padding-right: 15px
+
+                li 
+                    text-align: center
+                    display: -webkit-flex
+                    display: -moz-flex
+                    display: -ms-flex
+                    display: -o-flex
+                    display: flex
+                    justify-content: center
+                    
+                    a 
+                        display: block
+                        text-transform: uppercase
+                        color: #646472
+                        font-weight: 900
+                        padding: 5px
+                        font-size: 1em
+                        text-align: center
+                        margin: auto
+                        height: 25px
+                        width: 25px
+                        line-height: 0.6
+                        border-radius: 100%
+                    .alph-active
+                        border: 2px solid #4995c6 !important
+                        transition: all 0.3s
+                        
+            .alph-panel
+                justify-content: center
+                padding: 10px 0
+                .line-deg
+                    height: 100%
+                    width: 1px
+                    background-color: #a1a1af
+                    transform: rotate(20deg)
+                    margin-left: 10px
+                    margin-right: 10px
+                button
+                    background-color: transparent
+                    border: none
+                    font-size: 1em
+                    font-weight: bold
+                    color: #a1a1af
+                    font-weight: 700
+                .b2
+                    text-transform: uppercase
+                .line-v
+                    width: 1px
+                    height: 100%
+                    background-color: #a1a1af
+                    margin-left: 50px
+                .panel-active
+                    color: #fff
+
+
+
+    
+.footer
+    width: 100%
+    margin-top: 15px
+    .container
+        background-color: #454553
+        padding-top: 65px
+        padding-bottom: 95px
+        border-radius: 5px
+        overflow: hidden
+        text-align: center
+        h2
+            display: inline-block
+            color: #fff
+            font-size: 2.2em
+            line-height: 43px
+            font-weight: 900
+        .logo
+            display: inline-block
+            margin-bottom: 60px
+            img
+                vertical-align: middle
+        .center
+            display: -webkit-flex
+            display: -moz-flex
+            display: -ms-flex
+            display: -o-flex
+            display: flex
+            justify-content: center
+            .adress
+                text-align: left
+                font-size: 1.2em
+                color: #9c9ca3
+                span
+                    display: block
+                    font-weight: 400
+           
+            .flex-c
+                display: -webkit-flex
+                display: -moz-flex
+                display: -ms-flex
+                display: -o-flex
+                display: flex
+                flex-direction: column
+                margin-bottom: 15px
+                margin-top: 15px
+                span
+                   margin: auto 0
+                   
+                .soc-wrapp
+                    margin: auto 
+                form
+                    position: relative
+                    display: inline-block
+                    .email
+                        width: 230px
+                        height: 40px
+                        line-height: 40px
+                        padding-left: 10px
+                        padding-right: 35px
+                        border-radius: 50px 50px
+                        border: none
+                        background-color: #7d7d87
+                        color: #fff
+                    button
+                        position: absolute
+                        right: 20px
+                        top: 50%
+                        transform: translate(0, -50%)
+                        background-color: transparent
+                        border: none
+                        color: #fff
+                        display: inline-block
+                .center-form
+                    margin: auto 0
+                    align-items: center
+
+            .web
+                flex-direction: row
+                a 
+                    color: #a2a2a9
+                    padding: 0 15px
+                    display: inline-block
+                    transition: all 0.5s
+                    &:hover
+                        color: #d3d3d3
+
+.down-logo
+    width: 100%
+    margin-top: 90px
+    margin-bottom: 90px
+    text-align: center
+    img
+        max-width: 100%
+        vertical-align: middle           
+            
+   
+
+
+
+           
+        
+        
+
+
+    
+
+
+
+  
+  
+        
+        
+        
+       
+    
+    
+
+    
+    
+    
+
+
+    
+    
+    
+
+    
+
+
+    
+
+@import "media" // Всегда в конце
